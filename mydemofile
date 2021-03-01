@@ -1,1 +1,20 @@
-echo "hello from git to jenkin"
+pipeline
+{
+agent any
+stages{
+steps("stage1")
+{
+step
+{
+echo "hi from stage1"
+}
+}
+steps("stage2")
+{
+step
+{
+echo "hi from stage2"
+}
+}
+}
+}
